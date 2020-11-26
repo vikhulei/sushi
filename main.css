@@ -160,7 +160,7 @@ footer {
 @media screen and (max-width: 700px) {
     #container {
         grid-template-rows: 5vh 85vh 100vh;
-        grid-row-gap: 5vh;
+        grid-row-gap: 3vh;
     }
 
     nav ul {
@@ -180,7 +180,7 @@ footer {
     }
 
     main #pic {
-        height: 30vh;
+        height: 40vh;
     }
 
     footer {
