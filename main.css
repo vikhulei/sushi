@@ -159,8 +159,8 @@ footer {
 
 @media screen and (max-width: 700px) {
     #container {
-        grid-template-rows: 5vh 85vh 100vh;
-        grid-row-gap: 3vh;
+        grid-template-rows: 5vh 90vh 100vh;
+        grid-row-gap: 5vh;
     }
 
     nav ul {
@@ -172,18 +172,39 @@ footer {
         grid-auto-flow: row;
         grid-template-columns: 1fr;
         justify-items: center;
+        padding-bottom: 10vh;
     }
     
-    main #action {
-        font-size: 1em;
-        justify-self: unset;
+    main #pic {
+        height: 35vh;
+        align-self: flex-start;
     }
 
-    main #pic {
-        height: 40vh;
+    main #action {
+        display: block;
+        justify-self: center;
+        align-self: flex-end;
+        text-align: center;
+        font-size: 1.8em;
+    }
+
+    main #action form {
+        line-height: 2.5em;
+    }
+
+    main #action button {
+        width: 200px;
+        height: 50px;
+        font-weight: bolder;
+        font-size: 0.7em;
+        border-radius: 15px;
     }
 
     footer {
         grid-auto-flow: row;
+    }
 
+    .pics img {
+        height: 25vh;
+    }
 }
