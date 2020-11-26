@@ -91,8 +91,6 @@ form label {
 form input {
     background-color: transparent;
     width: 18vw;
-    min-width: 100px;
-    max-width: 400px;
     font-size: 0.9em;
 }
 
@@ -139,7 +137,7 @@ footer {
     transform: translate(3px, 3px);
 }
 
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1000px) {
 
     main #action {
         font-size: 1.3em;
@@ -154,7 +152,7 @@ footer {
 
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 850px) {
     #container {
         grid-template-rows: 5vh 90vh 100vh;
         grid-row-gap: 5vh;
