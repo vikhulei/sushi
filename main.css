@@ -139,10 +139,7 @@ footer {
     transform: translate(3px, 3px);
 }
 
-@media screen and (max-width: 950px) {
-    #container {
-        max-width: unset;
-    }
+@media screen and (max-width: 1050px) {
 
     main #action {
         font-size: 1.3em;
@@ -171,30 +168,48 @@ footer {
     main {
         grid-auto-flow: row;
         grid-template-columns: 1fr;
-        justify-items: center;
-        padding-bottom: 10vh;
-    }
-    
-    main #pic {
-        height: 35vh;
-        align-self: flex-start;
+        grid-template-rows: 1fr 1.5fr;
+
+        padding-bottom: 5vh;
     }
 
+    main #pic {
+        height: 100%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        padding-bottom: 3vh;
+    }
+
+    main #pic img {
+        height: 30vh;
+        border-radius: 40px;
+    }
+
+
     main #action {
-        display: block;
         justify-self: center;
-        align-self: flex-end;
         text-align: center;
-        font-size: 1.8em;
+        font-size: 4vh;
+        line-height: 1.1;
+        height: 100%;
     }
 
     main #action form {
-        line-height: 2.5em;
+        width: 70vw;
+        margin: 0 auto;
+    }
+
+    main #action form input {
+        width: 70vw;
     }
 
     main #action button {
-        width: 200px;
-        height: 50px;
+        margin-top: 2vh;
+        width: 30vw;
+        max-width: 200px;
+        height: 7vh;
+        min-height: 40px;
         font-weight: bolder;
         font-size: 0.7em;
         border-radius: 15px;
