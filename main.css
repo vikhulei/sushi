@@ -4,12 +4,11 @@
     box-sizing: border-box;
 }
 
-/* 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
-} */
+}
 
 body {
     background-color: #EB9633;
@@ -19,7 +18,7 @@ body {
 #container {
     padding-top: 20px;
     display: grid;
-    grid-template-rows: 5vh 40vh 20vh;
+    grid-template-rows: 8vh 40vh 20vh;
     grid-row-gap: 10vh;
     max-width: 90vw;
     margin: 0 auto;
@@ -27,7 +26,6 @@ body {
 
 nav {
     background-color: black;
-    height: 60px;
 }
 
 nav ul {
@@ -36,10 +34,10 @@ nav ul {
     height: 100%;
     display: grid;
     grid-auto-flow: column;
-    grid-template-columns: 5fr 1fr 1fr;
+    grid-template-columns: 4fr 1fr 1fr;
     justify-items: end;
     align-items: center;
-    padding-right: 50px;
+    padding-right: 5vw;
 }
 
 nav ul li a {
@@ -61,7 +59,6 @@ main {
 
 main #pic {
     height: 35vh;
-
 }
 
 main #pic img {
@@ -93,9 +90,8 @@ form label {
 
 form input {
     background-color: transparent;
-
     width: 18vw;
-    min-width: 150px;
+    min-width: 100px;
     max-width: 400px;
     font-size: 0.9em;
 }
@@ -141,4 +137,53 @@ footer {
 
 .pics img:hover {
     transform: translate(3px, 3px);
+}
+
+@media screen and (max-width: 950px) {
+    #container {
+        max-width: unset;
+    }
+
+    main #action {
+        font-size: 1.3em;
+    }
+
+    main #action button {
+        width: 100px;
+        height: 30px;
+        font-size: 0.55em;
+        border-radius: 8px;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+    #container {
+        grid-template-rows: 5vh 85vh 100vh;
+        grid-row-gap: 5vh;
+    }
+
+    nav ul {
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+    }
+
+    main {
+        grid-auto-flow: row;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    
+    main #action {
+        font-size: 1em;
+        justify-self: unset;
+    }
+
+    main #pic {
+        height: 30vh;
+    }
+
+    footer {
+        grid-auto-flow: row;
+
 }
