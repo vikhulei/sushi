@@ -20,6 +20,7 @@ body {
     display: grid;
     grid-template-rows: 8vh 40vh 20vh;
     grid-row-gap: 10vh;
+    width: 90vw;
     max-width: 90vw;
     margin: 0 auto;
 }
@@ -52,8 +53,8 @@ nav ul li:first-of-type {
 main {
     display: grid;
     grid-auto-flow: column;
+    grid-template-columns: 1fr 2fr;    
     align-items: end;
-    grid-template-columns: 1fr 2fr;
     padding-bottom: 5vh;
 }
 
@@ -66,25 +67,23 @@ main #pic img {
 }
 
 main #action {
-    justify-self: end;
     text-align: right;
-    line-height: 1.8em;
+    line-height: 1.4;
     font-size: 1.8em;
 }
 
 main #action h2 {
+    font-size: max(4vh, 1.5em);
     font-weight: 800;
 }
 
 main #action p {
+    font-size: max(3vh, 1.1em);
     font-style: italic;
 }
 
 main #action form {
     margin-top: 20px;
-}
-
-form label {
     font-size: 0.8em;
 }
 
@@ -102,14 +101,12 @@ main #action button {
     font-weight: bolder;
     font-size: 0.7em;
     border-radius: 15px;
+    margin-top: 20px;
 }
 
 main #action button:active {
     transform: translate(3px, 3px);
 }
-
-
-
 
 footer {
     display: grid;
@@ -137,17 +134,29 @@ footer {
     transform: translate(3px, 3px);
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1050px) {
+
 
     main #action {
-        font-size: 1.3em;
+        line-height: 1.4;
+    }
+
+    main #action form {
+        width: 50vw;
+        margin: 0 0 0 auto;
+        font-size: 0.8em;
+    }
+
+    main #action form input {
+        width: 100%;
     }
 
     main #action button {
-        width: 100px;
-        height: 30px;
+        width: 15vw;
+        height: 4vh;
         font-size: 0.55em;
         border-radius: 8px;
+        font-size: 2vh;
     }
 
 }
@@ -184,7 +193,6 @@ footer {
         border-radius: 40px;
     }
 
-
     main #action {
         justify-self: center;
         text-align: center;
@@ -215,9 +223,19 @@ footer {
 
     footer {
         grid-auto-flow: row;
+        border-bottom: 2px solid black;
+        border-right: 0 solid transparent; 
     }
+
+    .pics {
+        border: 2px solid black;
+        border-bottom: 0 solid transparent; 
+    }
+
 
     .pics img {
         height: 25vh;
     }
+
+    
 }

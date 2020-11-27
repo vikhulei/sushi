@@ -1,7 +1,7 @@
 function message() {
     let name = document.getElementById("name").value;
     let phone = document.getElementById("tel").value;
-    alert("Дякуємо, " + name + "! Ваше замовлення прийнято. Ми звяжемося з Вами за телефоном " + phone + ". Гарного дня!");
+    alert("Дякуємо, " + name + "! Ваше замовлення прийнято. Ми зв'яжемося з Вами за телефоном " + phone + ". Гарного дня!");
     document.getElementById("name").value="";
     document.getElementById("tel").value="";
 }
